@@ -8,17 +8,17 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload-all.min.js"></script>
-    <script src="dist/single-file-upload-directive.min.js"></script>
+    <!--<script src="dist/single-file-upload-directive.min.js"></script>-->
 </head>
 <body ng-app="app">
 
 <div class="container" ng-controller="appController as vm">
     {{vm.files}}
     <br>
-    <single-file-upload upload-url="{{vm.url}}" file-url="vm.files"></single-file-upload>
+    <single-file-upload button-text="文件上传" upload-url="{{vm.url}}" file-url="vm.files"></single-file-upload>
 </div>
 
-
+<script src="single-file-upload-directive.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
